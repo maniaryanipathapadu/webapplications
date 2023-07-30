@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/themes/splide-skyblue.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"
+    ></script>
+    <title> A Trip to Europe</title>
+
+    <style>
+      .splide {
+        margin: 0 auto;
+      }
+
+      .thumbnails {
+        display: flex;
+        margin: 1rem auto 0;
+        padding: 0;
+        justify-content: center;
+      }
+
+      .thumbnail {
+        width: 70px;
+        height: 70px;
+        overflow: hidden;
+        list-style: none;
+        margin: 0 0.2rem;
+        cursor: pointer;
+        opacity: 0.3;
+      }
+
+      .thumbnail.is-active {
+        opacity: 1;
+      }
+
+      .thumbnail img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body bgcolor="#17A698">
+    <h2> <center> A Responsive Image Gallery </center></h2>
+     <ul id="thumbnails" class="thumbnails">
+      <li class="thumbnail">
+        <img src="https://images.pexels.com/photos/2856012/pexels-photo-2856012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Amsterdam" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://images.pexels.com/photos/427679/pexels-photo-427679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="London" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://images.pexels.com/photos/326709/pexels-photo-326709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Rome" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://images.pexels.com/photos/1488315/pexels-photo-1488315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Paris" /> 
+      </li>
+      <li class="thumbnail">
+        <img src="https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Athens" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://images.pexels.com/photos/2570063/pexels-photo-2570063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Berlin" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://images.pexels.com/photos/442583/pexels-photo-442583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Prague" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://images.pexels.com/photos/165553/pexels-photo-165553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Bern" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://images.pexels.com/photos/3030468/pexels-photo-3030468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Stockholm" />
+      </li>
+      <li class="thumbnail">
+        <img src="https://images.pexels.com/photos/14543554/pexels-photo-14543554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Oslo" />
+      </li>
+    </ul>
+
+    <section id="main-slider" class="splide" aria-label="My Awesome Gallery">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img
+              src="https://images.pexels.com/photos/2856012/pexels-photo-2856012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />  <h3> Amsterdam, Netherlands </h3>
+          </li>
+          <li class="splide__slide">
+            <img
+              src="https://images.pexels.com/photos/427679/pexels-photo-427679.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />  <h3> London, England </h3>
+          </li>
+          <li class="splide__slide">
+            <img
+              src="https://images.pexels.com/photos/326709/pexels-photo-326709.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            /> <h3> Rome, Italy </h3>
+          </li> 
+          <li class="splide__slide">
+            <img
+              src="https://images.pexels.com/photos/1488315/pexels-photo-1488315.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            /> <h3> Paris, France </h3>
+          </li> 
+          <li class="splide__slide">
+            <img
+              src="https://images.pexels.com/photos/164336/pexels-photo-164336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            /> <h3> Athens, Greece </h3>
+          </li> 
+          <li class="splide__slide">
+            <img
+              src="https://images.pexels.com/photos/2570063/pexels-photo-2570063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            /> <h3> Berlin, Germany </h3>
+          </li> 
+          <li class="splide__slide">
+            <img
+              src="https://images.pexels.com/photos/442583/pexels-photo-442583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            /> <h3> Prague, Czech Republic </h3>
+          </li> 
+          <li class="splide__slide">
+            <img
+              src="https://images.pexels.com/photos/165553/pexels-photo-165553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            /> <h3> Bern, Switzerland </h3>
+          </li> 
+          <li class="splide__slide">
+            <img
+              src="https://images.pexels.com/photos/3030468/pexels-photo-3030468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            /> <h3> Stockholm, Sweden </h3>
+          </li> 
+          <li class="splide__slide">
+            <img
+              src="https://images.pexels.com/photos/14543554/pexels-photo-14543554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            /> <h3> Oslo, Norway </h3>
+          </li> 
+        </ul>
+      </div>
+    </section>
+
+   
+
+    <script>
+      var splide = new Splide("#main-slider", {
+        width: 1000,
+        height: 450,
+        pagination: false,
+        cover: true
+      });
+
+      var thumbnails = document.getElementsByClassName("thumbnail");
+      var current;
+
+      for (var i = 0; i < thumbnails.length; i++) {
+        initThumbnail(thumbnails[i], i);
+      }
+
+      function initThumbnail(thumbnail, index) {
+        thumbnail.addEventListener("click", function () {
+          splide.go(index);
+        });
+      }
+
+      splide.on("mounted move", function () {
+        var thumbnail = thumbnails[splide.index];
+
+        if (thumbnail) {
+          if (current) {
+            current.classList.remove("is-active");
+          }
+
+          thumbnail.classList.add("is-active");
+          current = thumbnail;
+        }
+      });
+
+      splide.mount();
+    </script>
+  </body>
+</html>
